@@ -9,22 +9,6 @@ typedef pair<int, int> pi;
 #define mp make_pair
 #define fr(i, a, b) for (int i = a; i < b; i++)
 
-bool solve(string& s){
-    unordered_map<int,int> mp;
-    for(auto it:s){
-        mp[it]++;
-    }
-    int count=0;
-    for(auto it : mp){
-        if(it.second%3==0){
-            count++;
-        }
-    }
-    if(count>1){
-        return false;
-    }
-    return true;
-}
 int main()
 {
     string s;
